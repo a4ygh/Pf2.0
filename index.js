@@ -1,4 +1,4 @@
-var password = "oCPC4'+A8LRr8-qb0H&M05Q5@L6MJDByw#j4w!&%GVDvuos2N_";
+var password = "qT23P5<3/bPt";
 (function passcodeprotect() {
    var passcode = prompt("Passwort Eingeben");
    while (passcode !== password) {
