@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/rammstein'); /*Ramm-Alphabet*/
+
+@import url('https://fonts.cdnfonts.com/css/rammstein-remix'); /*Ramm-Nummern*/
+
+@import url('https://fonts.cdnfonts.com/css/forerunner'); /*Forerunner*/
+
+:root
+{
+    /*Shade*/
+    --LED: #ffffff;
+    --schwarz: #000000;
+    --background-gray: #323232;
+    --monitor: #28282880;
+    --shadow: #282828;
+    --forerunner-alloy: #737478;
+    --forerunner-alloy-sand: #8f8b88;
+    --forerunner-alloy-ridge: #5b5b5b;
+    --forerunner-alloy-ridge-dark: #2b2d2c;
+    --forerunner-alloy-ridge-light: #f0e7e0;
+    /*covinant (purple)*/
+    --dark-covi: #3f2e3e;
+    --bloody-sangheili: #331c2c;
+    --light-covi: #a78295;
+    --bruise: #432D2F;
+    --covi-wall: #241a3e;
+    --soft-covi-wall: #544265;
+    --covi-flor: #59357a;
+    --soft-covi-flor: #826d87;
+    /*forerunner (blue)*/
+    --forerunner-beam: #66baff;
+    --wraith-blue: #363045;
+    --deep-soft-blue: #5c5470;
+    --blue-gray: #b9b4c7;
+    --deep-vintage-blue: #113946;
+    --formal-blue: #5c96a9;
+    /*civ. warthog (yellow)*/
+    --civilian-wart: #C88B18;
+    --sun:#F9B508;
+    --home-wall: #efe1d1;
+    --cream: #faf0e6;
+    --yellow-wall: #fff2d8;
+    --gray-wall: #ead7bb;
+    --watered-coffee: #bca37f;
+    /*duke (green)*/
+    --h2-chief: #817F59;
+    --h3-chief: #677156;
+    --hi-chief: #778450;
+    --light-vintage-green: #739072;
+    --vintage-green: #4f6f52;
+    --deep-vintage-green: #3a4d39;
+    /*banished (red)*/
+    --mark-of-atriox: #DF0024;
+    --rdomnai-blade: #FE3558;
+    --silent-shadow: #A23F61;
+    --fall-leaf: #9C1F2D;
+    --blood: #9A0005;
+    /*sample box* (orange)*/
+    --forerunner-conversion: #e09b4d;
+    --orange-box: #DE571F;
+    --orange: #DD7F0B;
+    /*brute (brown*/
+    /**/
+    /**/
+    /**/
+    /**/
+
+    /*
+    !-THEME-! 
+    - 
+    Forerunner with hidden black and white (Dark mode) Toggle
+    */
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: var(--forerunner-alloy);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar 
+{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track 
+{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb 
+{
+  background: var(--forerunner-beam);
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+  background: var(--forerunner-conversion);
+}
+
+/*nav*/
+
+.nav-links li, .nav-links a
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--forerunner-beam);
+    text-decoration: none;
+}
+
+header
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--forerunner-alloy-ridge);
+    border-bottom: 2px solid var(--forerunner-alloy-sand);
+    user-select: none;
+}
+
+.Header-Bild
+{
+    width: 100px;
+    cursor: default;
+}
+
+nav
+{
+    margin-right: 100px;
+}
+
+.nav-links
+{
+    list-style: none;
+}
+
+.nav-links li
+{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a
+{
+    transition: all 0.3s ease 0s;
+    transition: 0.5s;
+}
+
+.nav-links li a:hover
+{
+    color: var(--forerunner-conversion);
+    text-decoration-line: overline;
+}
+
+/*Erster Sektor*/
+
+.Erster-Sektor
+{
+    height: auto;
+    width: auto;
+    border: 1px solid var(--shadow);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    margin-top: 80px;
+    user-select: none;
+}
+
+.Erster-Sektor img
+{
+    width: 400px;
+    border: 10px outset var(--forerunner-beam);
+    margin-bottom: 40px;
+    transition: 0.5s;
+    border-radius: 6px;
+}
+
+.Erster-Sektor img:hover
+{
+    border: 10px outset var(--forerunner-conversion);
+}
+
+.ES-Text
+{
+    background-color: rgb(102, 186, 255, 0.6);
+    border: 3px solid var(--forerunner-beam);
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.6s;
+    color: var(--forerunner-beam);
+    text-decoration: none;
+    padding: 0px 12px 0px 12px;
+}
+
+.ES-Text b
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.ES-Mitte div:hover
+{
+    background-color: rgb(224, 155, 77, 0.6);
+    border: 3px solid var(--forerunner-conversion);
+}
+
+.ES-Text:hover
+{
+    color: var(--forerunner-conversion);
+    transition: 0.5s;
+}
+
+.ES-FadeText
+{
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.ES-FadeText1 b
+{
+    color: var(--LED);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    opacity: 0.8;
+    text-decoration-line: underline;
+}
+
+.ES-Symbol i
+{
+    color: var(--LED);
+    opacity: 0.8;
+    font-size: 1.6rem;
+}
+
+.ES-Symbol i, .ES-FadeText1
+{
+    animation: fadeIn 0.7s infinite alternate;
+}
+
+
+
+@keyframes fadeIn 
+{ 
+    from { opacity: 0; } 
+}
+
+/*Zweiter Sektor*/
+
+.Zweiter-Sektor
+{
+    height: auto;
+    width: auto;
+    border: 1px solid var(--shadow);
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    justify-content: space-around;
+    user-select: none;
+}
+
+.ZS-L-Text
+{
+    background-color: rgb(102, 186, 255, 0.6);
+    border: 3px solid var(--forerunner-beam);
+    border-radius: 5px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.6s;
+    color: var(--forerunner-beam);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.4rem;
+    text-decoration: none;
+    padding: 0px 12px 0px 12px;
+    transition: 0.6s;
+}
+
+.ZS-L-Text h1
+{
+    font-size: 3rem;
+    font-weight: 1000;
+}
+
+.ZS-Links div:hover
+{
+    background-color: rgb(224, 155, 77, 0.6);
+    border: 3px solid var(--forerunner-conversion);
+}
+
+.ZS-L-Text:hover
+{
+    color: var(--forerunner-conversion);
+}
+
+.ZS-Mitte
+{
+    height: 600px;
+    width: 1px;
+    border: 4px solid var(--forerunner-beam);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.ZS-Mitte:hover
+{
+    border: 4px solid var(--forerunner-conversion);
+}
+
+.ZS-Rechts 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    border: 1px solid var(--shadow);
+}
+
+.ZS-Rechts img 
+{
+    border: 1px solid var(--shadow);
+    margin: 10px;
+}
+
+.ZS-Rechts img[alt*="Html"]
+{
+    width: 226px;
+}
+
+.ZS-Rechts img[alt*="Css"]
+{
+    width: 225px;
+}
+
+/*Dritter Sektor*/
+
+.Dritter-Sektor
+{
+    height: auto;
+    width: auto;
+    border: 1px solid var(--shadow);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    user-select: none;
+}
+
+.DS-M-Text
+{
+    background-color: rgb(102, 186, 255, 0.6);
+    border: 3px solid var(--forerunner-beam);
+    border-radius: 5px;
+    width: auto ;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.6s;
+    color: var(--forerunner-beam);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.4rem;
+    text-decoration: none;
+    padding: 0px 12px 0px 12px;
+    transition: 0.6s;
+}
+
+.DS-Mitte div:hover
+{
+    background-color: rgb(224, 155, 77, 0.6);
+    border: 3px solid var(--forerunner-conversion);
+}
+
+.DS-M-Text:hover
+{
+    color: var(--forerunner-conversion);
+}
+
+.DS-M-Knopf
+{
+    background-color: rgb(102, 186, 255, 0.6);
+    border: 3px solid var(--forerunner-beam);
+    border-radius: 25px;
+    margin: 30px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    font-size: 2.4rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+
+.DS-M-Knopf a
+{
+    color: var(--forerunner-beam);
+    text-decoration: none;
+    padding: 0px 12px 0px 12px;
+    transition: 0.6s;
+}
+
+.DS-M-Knopf a:hover
+{
+    color: var(--forerunner-conversion);
+}
+
+/*Vierter Sektor*/
+
+.Vierter-Sektor
+{
+    height: auto;
+    width: auto;
+    border: 1px solid var(--shadow);
+    display: flex;
+    margin-bottom: 200px;
+    justify-content: space-around;
+    user-select: none;
+}
+
+.VS-L-Knopf, .VS-R-Knopf
+{
+    background-color: rgb(102, 186, 255, 0.6);
+    border: 3px solid var(--forerunner-beam);
+    border-radius: 25px;
+    margin: 30px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    font-size: 2.4rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+
+.VS-L-Knopf a, .VS-R-Knopf a
+{
+    color: var(--forerunner-beam);
+    text-decoration: none;
+    padding: 0px 12px 0px 12px;
+    transition: 0.6s;
+}
+
+.VS-Links div:hover, .VS-Rechts div:hover
+{
+    background-color: rgb(224, 155, 77, 0.6);
+    border: 3px solid var(--forerunner-conversion);
+}
+
+.VS-L-Knopf a:hover, .VS-R-Knopf a:hover
+{
+    color: var(--forerunner-conversion);
+}
+
+/*Fünfter Sektor*/
+
+.Fünfter-Sektor
+{
+    height: auto;
+    width: auto;
+    border: 1px solid var(--shadow);
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    justify-content: space-around;
+    user-select: none;
+}
+
+.FS-M-Text
+{
+    background-color: rgb(102, 186, 255, 0.6);
+    border: 3px solid var(--forerunner-beam);
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.6s;
+    color: var(--forerunner-beam);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.4rem;
+    text-decoration: none;
+    padding: 0px 12px 0px 12px;
+    transition: 0.6s;
+}
+
+.FS-Mitte div:hover
+{
+    background-color: rgb(224, 155, 77, 0.6);
+    border: 3px solid var(--forerunner-conversion);
+}
+
+.FS-M-Text:hover
+{
+    color: var(--forerunner-conversion);
+}
+
+.FS-M-Knopf
+{
+    background-color: rgb(102, 186, 255, 0.6);
+    border: 3px solid var(--forerunner-beam);
+    border-radius: 25px;
+    margin: 30px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    font-size: 2.4rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+
+.FS-M-Knopf a
+{
+    color: var(--forerunner-beam);
+    text-decoration: none;
+    padding: 0px 12px 0px 12px;
+    transition: 0.6s;
+}
+
+.FS-M-Knopf a:hover
+{
+    color: var(--forerunner-conversion);
+}
+
+/*Footer*/
+
+footer
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--forerunner-alloy-ridge);
+    border-top: 2px solid var(--forerunner-alloy-sand);
+    user-select: none;
+}
+
+.Footer-Links
+{
+    width: 300px;
+}
+
+.Footer-L-Bild img, .Footer-L-Bild-H img
+{
+    width: 150px;
+}
+
+.Footer-L-Bild
+{
+    position: absolute;
+    transition: 0.6s;
+}
+
+.Footer-L-Bild:hover
+{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+.Footer-Mitte
+{
+    width: 300px;
+    text-align: center;
+}
+
+.Footer-M-Knopf a
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--forerunner-beam);
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    transition: 0.5s;
+}
+
+.Footer-M-Knopf a:hover
+{
+    color: var(--forerunner-conversion);
+    text-decoration-line: underline;
+    text-underline-offset: 6px;
+}
+
+.Footer-Rechts
+{
+    width: 300px;
+    text-align: center;
+}
+
+.Footer-Rechts b
+{
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--forerunner-beam);
+    font-family: 'Forerunner', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1220px)
+{
+    .portfolio
+    {
+        height: auto;
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Zweiter Sektor*/
+
+    .ZS-L-Text b
+{
+    font-size: 1.4rem;
+    margin: 0px 8px 0px 8px;
+}
+
+    /*Dritter Sektor*/
+
+    .DS-L-Knopf a, .DS-R-Knopf a
+    {
+        font-size: 1.4rem;
+        margin: 0px 8px 0px 8px;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .portfolio
+    {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*nav*/
+
+    .nav-links li, .nav-links a
+    {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    header
+    {
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .Header-Bild
+    {
+        width: 140px;
+    }
+
+    nav
+    {
+        margin-right: 0px;
+    }
+
+    .nav-links li
+    {
+        display: block;
+        padding: 16px;
+    }
+}
