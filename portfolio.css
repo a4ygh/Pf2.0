@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@import url('https://fonts.cdnfonts.com/css/rammstein'); /*Alphabet*/
+@import url('https://fonts.cdnfonts.com/css/rammstein'); /*Ramm-Alphabet*/
 
-@import url('https://fonts.cdnfonts.com/css/rammstein-remix'); /*Nummern*/
+@import url('https://fonts.cdnfonts.com/css/rammstein-remix'); /*Ramm-Nummern*/
+
+@import url('https://fonts.cdnfonts.com/css/forerunner'); /*Forerunner*/
 
 :root
 {
@@ -114,7 +116,7 @@ body
 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     color: var(--forerunner-beam);
     text-decoration: none;
 }
@@ -164,49 +166,6 @@ nav
     color: var(--forerunner-conversion);
     text-decoration-line: overline;
 }
-
-
-/*male nav text same (Holographic)*/
-
-
-/*.ZS-L-Text
-{
-    background-color: rgb(102, 186, 255, 0.6);
-    border: 3px solid var(--forerunner-beam);
-    border-radius: 5px;
-    width: 500px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    transition: 0.6s;
-    color: var(--forerunner-beam);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size: 2.4rem;
-    text-decoration: none;
-    padding: 0px 12px 0px 12px;
-    transition: 0.6s;
-}
-
-.ZS-L-Text h1
-{
-    font-size: 3rem;
-}
-
-.ZS-Links div:hover
-{
-    background-color: rgb(224, 155, 77, 0.6);
-    border: 3px solid var(--forerunner-conversion);
-}
-
-.ZS-L-Text:hover
-{
-    color: var(--forerunner-conversion);
-}*/
-
-
-
 
 /*Erster Sektor*/
 
@@ -348,6 +307,7 @@ nav
 .ZS-L-Text h1
 {
     font-size: 3rem;
+    font-weight: 1000;
 }
 
 .ZS-Links div:hover
@@ -410,8 +370,8 @@ nav
     width: auto;
     border: 1px solid var(--shadow);
     display: flex;
+    justify-content: center;
     margin-bottom: 200px;
-    justify-content: space-around;
     user-select: none;
 }
 
@@ -484,8 +444,6 @@ nav
     width: auto;
     border: 1px solid var(--shadow);
     display: flex;
-    place-items: center;
-    justify-content: center;
     margin-bottom: 200px;
     justify-content: space-around;
     user-select: none;
@@ -603,11 +561,100 @@ nav
     color: var(--forerunner-conversion);
 }
 
-/*Sechster Sektor*/
+/*Footer*/
+
+footer
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--forerunner-alloy-ridge);
+    border-top: 2px solid var(--forerunner-alloy-sand);
+    user-select: none;
+}
+
+.Footer-Links
+{
+    width: 300px;
+}
+
+.Footer-L-Bild img, .Footer-L-Bild-H img
+{
+    width: 150px;
+}
+
+.Footer-L-Bild
+{
+    position: absolute;
+    transition: 0.6s;
+}
+
+.Footer-L-Bild:hover
+{
+    opacity: 0;
+}
 
 
 
-@media (max-width: 1720px)
+
+
+
+
+.Footer-Mitte
+{
+    width: 300px;
+    text-align: center;
+}
+
+.Footer-M-Knopf a
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--forerunner-beam);
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    transition: 0.5s;
+}
+
+.Footer-M-Knopf a:hover
+{
+    color: var(--forerunner-conversion);
+    text-decoration-line: underline;
+    text-underline-offset: 6px;
+}
+
+.Footer-Rechts
+{
+    width: 300px;
+    text-align: center;
+}
+
+.Footer-Rechts b
+{
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--forerunner-beam);
+    font-family: 'Forerunner', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1220px)
 {
     .portfolio
     {
