@@ -185,7 +185,7 @@ nav
 
 .Erster-Sektor img
 {
-    width: 400px;
+    width: 350px;
     border: 10px outset var(--forerunner-beam);
     margin-bottom: 40px;
     transition: 0.5s;
