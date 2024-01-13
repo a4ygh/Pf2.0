@@ -97,7 +97,7 @@ body
 
 ::-webkit-scrollbar-track 
 {
-  background: transparent;
+  background: var(--forerunner-alloy-ridge);
 }
 
 ::-webkit-scrollbar-thumb 
@@ -131,6 +131,13 @@ header
     background-color: var(--forerunner-alloy-ridge);
     border-bottom: 2px solid var(--forerunner-alloy-sand);
     user-select: none;
+}
+
+header b
+{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .Header-Bild
@@ -167,6 +174,66 @@ nav
     text-decoration-line: overline;
 }
 
+@media (max-width: 1000px)
+{
+    .nav-links li, .nav-links a
+    {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    header
+    {
+        width: 110%;
+        display: flex;
+        justify-content: center;
+        background-color: var(--forerunner-alloy-ridge);
+        border-bottom: 2px solid var(--forerunner-alloy-sand);
+        user-select: none;
+        text-align: center;
+        z-index: 1;
+    }
+
+    header b
+    {
+        font-family: 'Forerunner', sans-serif;
+        color: var(--forerunner-beam);
+        font-size: 22px;
+        border: 1px solid var(--hi-chief);
+        opacity: 1;
+        position: relative;
+        list-style: none;
+        margin-left: 130px;
+        margin-right: 130px;
+        transition: 0.6s;
+    }
+
+    header b:hover
+    {
+        color: var(--forerunner-conversion);
+    }
+
+    .Header-Bild
+    {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    nav
+    {
+        margin-right: 0px;
+        border: 1px solid var(--orange);
+    }
+
+    .nav-links li
+    {
+        display: block;
+        padding: 16px;
+    }
+}
+
 /*Erster Sektor*/
 
 .Erster-Sektor
@@ -185,7 +252,7 @@ nav
 
 .Erster-Sektor img
 {
-    width: 350px;
+    width: 400px;
     border: 10px outset var(--forerunner-beam);
     margin-bottom: 40px;
     transition: 0.5s;
@@ -269,13 +336,39 @@ nav
     from { opacity: 0; } 
 }
 
+
+
+@media (max-width: 1000px)
+{
+    .Erster-Sektor img
+    {
+        width: 500px;
+    }
+}
+
+@media (max-height: 1000px)
+{
+    .Erster-Sektor img
+    {
+        width: 350px;
+    }
+}
+
+@media (max-height: 930px)
+{
+    .Erster-Sektor img
+    {
+        width: 300px;
+    }
+}
+
 /*Zweiter Sektor*/
 
 .Zweiter-Sektor
 {
     height: auto;
     width: auto;
-    border: 1px solid var(--shadow);
+    border: 1px solid var(--orange);
     display: flex;
     place-items: center;
     justify-content: center;
@@ -341,7 +434,7 @@ nav
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: auto;
     width: 500px;
     border: 1px solid var(--shadow);
 }
@@ -362,6 +455,29 @@ nav
     width: 225px;
 }
 
+
+
+@media (max-width: 1220px)
+{
+    .Zweiter-Sektor
+    {
+        height: auto;
+        width: auto;
+        border: 1px solid var(--orange);
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .ZS-Mitte
+    {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 1px;
+        width: 600px;
+        border: 4px solid var(--forerunner-beam);
+    }
+}
+
 /*Dritter Sektor*/
 
 .Dritter-Sektor
@@ -380,7 +496,7 @@ nav
     background-color: rgb(102, 186, 255, 0.6);
     border: 3px solid var(--forerunner-beam);
     border-radius: 5px;
-    width: auto ;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -435,6 +551,16 @@ nav
     color: var(--forerunner-conversion);
 }
 
+
+
+@media (max-width: 1000px)
+{
+    .DS-M-Text
+    {
+        width: 500px;
+    }
+}
+
 /*Vierter Sektor*/
 
 .Vierter-Sektor
@@ -482,6 +608,21 @@ nav
 .VS-L-Knopf a:hover, .VS-R-Knopf a:hover
 {
     color: var(--forerunner-conversion);
+}
+
+
+
+@media (max-width: 1220px)
+{
+    .Vierter-Sektor
+    {
+        width: auto;
+        height: auto;
+        border: 1px solid var(--shadow);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 /*Fünfter Sektor*/
@@ -558,6 +699,16 @@ nav
     color: var(--forerunner-conversion);
 }
 
+
+
+@media (max-width: 1000px)
+{
+    .FS-M-Text
+    {
+        width: 500px;
+    }
+}
+
 /*Footer*/
 
 footer
@@ -566,15 +717,24 @@ footer
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     background-color: var(--forerunner-alloy-ridge);
     border-top: 2px solid var(--forerunner-alloy-sand);
     user-select: none;
 }
 
-.Footer-Links
+.Footer-Links1
 {
+    opacity: 1;
+    position: relative;
     width: 300px;
+    border: 1px solid var(--hi-chief);
+}
+
+.Footer-Links2
+{
+    opacity: 0;
+    position: absolute;
 }
 
 .Footer-L-Bild img, .Footer-L-Bild-H img
@@ -593,16 +753,11 @@ footer
     opacity: 0;
 }
 
-
-
-
-
-
-
 .Footer-Mitte
 {
     width: 300px;
     text-align: center;
+    border: 1px solid var(--hi-chief);
 }
 
 .Footer-M-Knopf a
@@ -627,6 +782,7 @@ footer
 {
     width: 300px;
     text-align: center;
+    border: 1px solid var(--hi-chief);
 }
 
 .Footer-Rechts b
@@ -635,19 +791,13 @@ footer
     font-size: 30px;
     color: var(--forerunner-beam);
     font-family: 'Forerunner', sans-serif;
+    transition: 0.6s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.Footer-Rechts b:hover
+{
+    color: var(--forerunner-conversion);
+}
 
 
 
@@ -664,14 +814,6 @@ footer
     /*Zweiter Sektor*/
 
     .ZS-L-Text b
-{
-    font-size: 1.4rem;
-    margin: 0px 8px 0px 8px;
-}
-
-    /*Dritter Sektor*/
-
-    .DS-L-Knopf a, .DS-R-Knopf a
     {
         font-size: 1.4rem;
         margin: 0px 8px 0px 8px;
@@ -680,42 +822,47 @@ footer
 
 @media (max-width: 1000px)
 {
+    body
+    {
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
     .portfolio
     {
-        height: auto;
         width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer
+    {
+        width: 130%;
         display: flex;
         flex-direction: column;
     }
 
-    /*nav*/
-
-    .nav-links li, .nav-links a
+    .Footer-Rechts
     {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        font-size: 22px;
+        width: 500px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    header
+    .Footer-Links1
     {
-        justify-content: space-around;
-        padding: 20px;
+        opacity: 0;
+        position: absolute;
     }
 
-    .Header-Bild
+    .Footer-Links2
     {
-        width: 140px;
-    }
-
-    nav
-    {
-        margin-right: 0px;
-    }
-
-    .nav-links li
-    {
-        display: block;
-        padding: 16px;
+        opacity: 1;
+        position: relative;
+        width: auto;
+        border: 1px solid var(--bloody-sangheili);
     }
 }
