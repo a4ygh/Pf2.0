@@ -199,7 +199,7 @@ nav
     header b
     {
         font-family: 'Forerunner', sans-serif;
-        color: var(--forerunner-beam);
+        color: var(--forerunner-alloy-ridge-light);
         font-size: 22px;
         opacity: 1;
         position: relative;
@@ -211,7 +211,7 @@ nav
 
     header b:hover
     {
-        color: var(--forerunner-conversion);
+        color: var(--forerunner-beam);
     }
 
     .Header-Bild
@@ -237,7 +237,6 @@ nav
 
 .Portfolio
 {
-    border: 3px solid var(--covi-flor);
     width: 1500px;
     display: flex;
     flex-direction: column;
@@ -251,7 +250,6 @@ nav
 {
     .Portfolio
     {
-        border: 3px solid var(--LED);
         width: 1000px;
     }
 }
@@ -260,7 +258,6 @@ nav
 {
     .Portfolio
     {
-        border: 3px solid var(--blood);
         width: 600px;
     }
 }
@@ -269,7 +266,6 @@ nav
 {
     .Portfolio
     {
-        border: 3px solid var(--civilian-wart);
         width: 400px;
     }
 }
@@ -332,14 +328,25 @@ nav
 
 @media (max-width: 600px)
 {
+    .S1, .S3
+    {
+        margin-bottom: 150px;
+    }
+    .S2
+    {
+        margin-bottom: 150px;
+    }
 
+    .S4
+    {
+        margin-bottom: 150px;
+    }
 }
 
 /*S1*/ /*S1*/ /*S1*/ 
 
 .S1
 {
-    border: 3px solid var(--covi-flor);
     width: 1400px;
     height: auto;
 }
@@ -396,7 +403,6 @@ nav
 {
     .S1
     {
-        border: 3px solid var(--LED);
         width: 1000px;
     }
 
@@ -411,8 +417,7 @@ nav
 {
     .S1
     {
-        border: 3px solid var(--blood);
-        width: 400px;
+        width: 600px;
     }
 
     .S1-Text
@@ -423,7 +428,12 @@ nav
 
 @media (max-width: 600px)
 {
-    .S1-Bild img
+    .S1
+    {
+        width: 400px;
+    }
+
+    .S1-Bilder img
     {
         width: 370px;
     }
@@ -439,7 +449,6 @@ nav
 
 .S2
 {
-    border: 3px solid var(--covi-flor);
     width: 1200px;
     height: auto;
 }
@@ -473,14 +482,8 @@ nav
 {
     width: 500px;
     height: auto;
-    border: 3px solid var(--covi-flor);
     display: flex;
     justify-content: space-around;
-}
-
-.S2-Bilder img
-{
-    border: 3px solid var(--blood);
 }
 
 .S2-B-HTML img
@@ -533,7 +536,6 @@ nav
 {
     .S2
     {
-        border: 3px solid var(--LED);
         width: 1000px;
         height: 800px;
     }
@@ -549,17 +551,15 @@ nav
 {
     .S2
     {
-        border: 3px solid var(--blood);
         width: 600px;
         height: 800px;
     }
 }
 
-@media (max-width: 600px) /*CHANGE*/
+@media (max-width: 600px)
 {
     .S2
     {
-        border: 3px solid var(--blood);
         width: 400px;
         height: 800px;
     }
@@ -567,12 +567,17 @@ nav
     .S2-Text
     {
         width: 370px;
+        font-size: 1.4rem;
+    }
+
+    .S2-Strich
+    {
+        width: 380px;
     }
 
     .S2-Bilder
     {
         width: 400px;
-        justify-content: space-between;
     }
 
     .S2-B-HTML img
@@ -582,7 +587,7 @@ nav
 
     .S2-B-CSS img
     {
-        width: 185px;
+        width: 184.8px;
     }
 }
 
@@ -590,7 +595,6 @@ nav
 
 .S3
 {
-    border: 3px solid var(--covi-flor);
     width: 1400px;
     height: auto;
 }
@@ -657,7 +661,6 @@ nav
 {
     .S3
     {
-        border: 3px solid var(--LED);
         width: 1000px;
     }
     
@@ -673,7 +676,6 @@ nav
 {
     .S3
     {
-        border: 3px solid var(--blood);
         width: 600px;
     }
     
@@ -687,13 +689,18 @@ nav
 {
     .S3
     {
-        border: 3px solid var(--civilian-wart);
-        width: 1000px;
+        width: 400px;
     }
     
     .S3-Text
     {
-        width: 310px;
+        width: 290px;
+        font-size: 2rem;
+    }
+
+    .S3-Knopf
+    {
+        font-size: 2rem;
     }
 }
 
@@ -701,7 +708,6 @@ nav
 
 .S4
 {
-    border: 3px solid var(--covi-flor);
     width: 1400px;
     height: auto;
 }
@@ -758,15 +764,7 @@ nav
 {
     .S4
     {
-        border: 3px solid var(--LED);
         width: 1000px;
-    }
-    
-    .S4-Text
-    {
-        padding: 2px 12px 2px 12px;
-        font-size: 2.2rem;
-        text-align: center;
     }
 }
 
@@ -774,16 +772,7 @@ nav
 {
     .S4
     {
-        border: 3px solid var(--blood);
         width: 600px;
-    }
-    
-    .S4-Text
-    {
-        width: 450px;
-        padding: 2px 12px 2px 12px;
-        font-size: 2.2rem;
-        text-align: center;
     }
 }
 
@@ -791,8 +780,22 @@ nav
 {
     .S4
     {
-        border: 3px solid var(--civilian-wart);
-        width: 1000px;
+        width: 400px;
+    }
+    
+    .S4-Knopf-L, .S4-Knopf-Z
+    {
+        width: 290px;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .S4
+    {
+        width: 400px;
     }
     
     .S4-Text
@@ -808,7 +811,6 @@ nav
 
 .S5
 {
-    border: 3px solid var(--covi-flor);
     width: 1400px;
     height: auto;
 }
@@ -873,7 +875,6 @@ nav
 {
     .S5
     {
-        border: 3px solid var(--LED);
         width: 1000px;
     }
     
@@ -889,7 +890,6 @@ nav
 {
     .S5
     {
-        border: 3px solid var(--blood);
         width: 600px;
     }
     
@@ -899,17 +899,22 @@ nav
     }
 }
 
-@media (max-width: 600px) /*CHANGE*/
+@media (max-width: 600px)
 {
     .S5
     {
-        border: 3px solid var(--civilian-wart);
-        width: 1000px;
+        width: 400px;
     }
     
     .S5-Text
     {
-        width: 450px;
+        width: 290px;
+        font-size: 2rem;
+    }
+
+    .S5-Knopf
+    {
+        font-size: 2rem;
     }
 }
 
@@ -933,7 +938,6 @@ footer
     position: relative;
     width: 300px;
     z-index: 1;
-    border: 3px solid var(--h2-chief);
 }
 
 .Footer-Überbilder img, .Footer-Unterbilder img
@@ -956,7 +960,6 @@ footer
 {
     width: auto;
     text-align: center;
-    border: 3px solid var(--h2-chief);
 }
 
 .Footer-Knopf a
@@ -980,7 +983,6 @@ footer
 {
     width: 300px;
     text-align: center;
-    border: 3px solid var(--h2-chief);
 }
 
 .Footer-Leitung a
@@ -1030,7 +1032,6 @@ footer
     {
         margin-left: 30%;
         width: fit-content;
-        border: 3px solid var(--civilian-wart);
     }
 
     .Footer-Leitung

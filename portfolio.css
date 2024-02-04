@@ -330,18 +330,18 @@ nav
 @media (max-width: 600px)
 {
     .S1, .S3
-{
-    margin-bottom: 150px;
-}
-.S2
-{
-    margin-bottom: 150px;
-}
+    {
+        margin-bottom: 150px;
+    }
+    .S2
+    {
+        margin-bottom: 150px;
+    }
 
-.S4
-{
-    margin-bottom: 150px;
-}
+    .S4
+    {
+        margin-bottom: 150px;
+    }
 }
 
 
@@ -420,6 +420,11 @@ nav
 
 @media (max-width: 600px)
 {
+    .S1
+    {
+        width: 400px;
+    }
+
     .S1-Bild img
     {
         width: 370px;
@@ -510,8 +515,6 @@ nav
     {
         width: 550px;
         height: 4px;
-        border: 4px solid var(--forerunner-beam);
-        border-radius: 10px;
     }
 }
 
