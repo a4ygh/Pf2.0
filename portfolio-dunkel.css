@@ -80,6 +80,11 @@
     box-sizing: border-box;
 }
 
+html 
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     display: grid;
@@ -966,7 +971,7 @@ footer
 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 25px;
     color: var(--forerunner-alloy-ridge-light);
     text-decoration: none;
     transition: 0.6s;
@@ -998,6 +1003,7 @@ footer
 .Footer-Leitung a:hover
 {
     color: var(--forerunner-beam);
+    text-decoration-line: underline;
 }
 
 .Footer-Unterbilder
