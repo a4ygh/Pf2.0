@@ -181,6 +181,11 @@ nav
     text-decoration-line: overline;
 }
 
+#NAV-Start
+{
+    text-decoration-line: overline;
+}
+
 
 
 @media (max-width: 1000px)
@@ -948,6 +953,7 @@ footer
 .Footer-Überbilder img, .Footer-Unterbilder img
 {
     width: 150px;
+    vertical-align: middle;
 }
 
 .Footer-Üb-Bild
