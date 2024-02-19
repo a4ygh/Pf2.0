@@ -282,7 +282,7 @@ nav
 
 /*Vor- S*/ /*Vor- S*/ /*Vor- S*/ 
 
-.S1, .S3
+.S1, .S3, .S5
 {
     display: flex;
     flex-direction: column;
@@ -310,7 +310,7 @@ nav
     margin-bottom: 200px;
 }
 
-.S5
+.S6
 {
     display: flex;
     flex-direction: column;
@@ -881,6 +881,8 @@ nav
     color: var(--forerunner-beam);
 }
 
+
+
 @media (max-width: 1500px)
 {
     .S5
@@ -923,6 +925,117 @@ nav
     }
 
     .S5-Knopf
+    {
+        font-size: 2rem;
+    }
+}
+
+/*S6*/ /*S6*/ /*S6*/
+
+.S6
+{
+    width: 1400px;
+    height: auto;
+}
+
+.S6-Text
+{
+    background-color: rgb(91, 91, 91);
+    width: fit-content;
+    border: 3px solid var(--monitor);
+    color: var(--forerunner-alloy-ridge-light);
+    transition: 0.6s;
+    border-radius: 5px;
+    cursor: default;
+    padding: 2px 12px 2px 12px;
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.S6-Knopf
+{
+    background-color: rgb(91, 91, 91);
+    width: fit-content;
+    border: 3px solid var(--monitor);
+    transition: 0.6s;
+    border-radius: 15px;
+    cursor: default;
+    margin-top: 50px;
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.S6-Knopf a
+{
+    color: var(--forerunner-alloy-ridge-light);
+    text-decoration: none;
+    padding: 2px 12px 2px 12px;
+    transition: 0.6s;
+}
+
+.S6-Text:hover
+{
+    background-color: rgb(102, 186, 255, 0.6);
+    border: 3px solid var(--forerunner-beam);
+    color: var(--forerunner-beam);
+}
+
+.S6-Knopf:hover
+{
+    background-color: rgb(102, 186, 255, 0.6);
+    border: 3px solid var(--forerunner-beam);
+    transform: translateY(-10px);
+}
+
+.S6-Knopf a:hover
+{
+    color: var(--forerunner-beam);
+}
+
+@media (max-width: 1500px)
+{
+    .S6
+    {
+        width: 1000px;
+    }
+    
+    .S6-Text
+    {
+        padding: 2px 12px 2px 12px;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .S6
+    {
+        width: 600px;
+    }
+    
+    .S6-Text
+    {
+        width: 450px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .S6
+    {
+        width: 400px;
+    }
+    
+    .S6-Text
+    {
+        width: 290px;
+        font-size: 2rem;
+    }
+
+    .S6-Knopf
     {
         font-size: 2rem;
     }

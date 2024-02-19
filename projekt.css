@@ -251,6 +251,7 @@ nav
     width: 1800px;
     display: flex;
     flex-direction: column;
+    user-select: none;
 }
 
 @media (max-width: 1800px)
