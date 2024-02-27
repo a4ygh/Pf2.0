@@ -64,7 +64,13 @@
     /**/
     /**/
     /**/
-    /**/
+
+    /*!SPEACIAL!*/
+    --linkedin: #0077b5;
+    --facebook: #1877F2;
+    --instagram: #d95886;
+    --youtube: #e62117;
+    --twitter: #08a0e9;
 
     /*
     !-THEME-! 
@@ -953,6 +959,52 @@ nav
     font-weight: 800;
 }
 
+.S6-Sozial
+{
+    width: 300px;
+    transition: 0.6s;
+    cursor: default;
+    padding: 2px 12px 2px 12px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.S6-Sozial a
+{
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--forerunner-alloy-ridge-light);
+    transition: 0.4s;
+}
+
+#S6-S-LI:hover
+{
+    color: var(--linkedin);
+}
+
+#S6-S-FB:hover
+{
+    color: var(--facebook);
+}
+
+#S6-S-IG:hover
+{
+    color: var(--instagram);
+}
+
+#S6-S-YT:hover
+{
+    color: var(--youtube);
+}
+
+#S6-S-Tw:hover
+{
+    color: var(--twitter);
+}
+
 .S6-Knopf
 {
     background-color: rgb(91, 91, 91);
@@ -993,6 +1045,8 @@ nav
 {
     color: var(--forerunner-beam);
 }
+
+
 
 @media (max-width: 1500px)
 {
@@ -1106,13 +1160,14 @@ footer
 .Footer-Leitung
 {
     width: 300px;
-    text-align: center;
+    margin-right: 20px;
+    text-align: right;
 }
 
 .Footer-Leitung a
 {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 130px;
     color: var(--forerunner-alloy-ridge-light);
     font-family: 'Forerunner', sans-serif;
     transition: 0.6s;
@@ -1163,6 +1218,8 @@ footer
     {
         margin-top: 20px;
         margin-bottom: 20px;
+        margin-right: 0px;
+        text-align: center;
     }
 
     .Footer-Überbilder
