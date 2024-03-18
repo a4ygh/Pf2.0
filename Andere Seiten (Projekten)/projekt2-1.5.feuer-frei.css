@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/rammstein'); /*Alphabet*/
+
+@import url('https://fonts.cdnfonts.com/css/rammstein-remix'); /*Nummern*/
+
+:root
+{
+    /*Shade*/
+    --LED: #ffffff;
+    --schwarz: #000000;
+    --background-gray: #323232;
+    --monitor: #28282880;
+    --shadow: #282828;
+    --forerunner-alloy: #737478;
+    /*covinant (purple)*/
+    --dark-covi: #3f2e3e;
+    --bloody-sangheili: #331c2c;
+    --light-covi: #a78295;
+    --bruise: #432D2F;
+    --covi-wall: #241a3e;
+    --soft-covi-wall: #544265;
+    --covi-flor: #59357a;
+    --soft-covi-flor: #826d87;
+    /*forerunner (blue)*/
+    --wraith-blue: #363045;
+    --deep-soft-blue: #5c5470;
+    --blue-gray: #b9b4c7;
+    --deep-vintage-blue: #113946;
+    --formal-blue: #5c96a9;
+    /*civ. warthog (yellow)*/
+    --civilian-wart: #C88B18;
+    --sun:#F9B508;
+    --home-wall: #efe1d1;
+    --cream: #faf0e6;
+    --yellow-wall: #fff2d8;
+    --gray-wall: #ead7bb;
+    --watered-coffee: #bca37f;
+    /*duke (green)*/
+    --h2-chief: #817F59;
+    --h3-chief: #677156;
+    --hi-chief: #778450;
+    --light-vintage-green: #739072;
+    --vintage-green: #4f6f52;
+    --deep-vintage-green: #3a4d39;
+    /*banished (red)*/
+    --mark-of-atriox: #DF0024;
+    --rdomnai-blade: #FE3558;
+    --silent-shadow: #A23F61;
+    --fall-leaf: #9C1F2D;
+    --blood: #9A0005;
+    /*sample box* (orange)*/
+    --orange-box: #DE571F;
+    --orange: #DD7F0B;
+    /*brute (brown*/
+    /**/
+    /**/
+    /**/
+    /**/
+    /*!-THEME-!*/
+    --Band: #000000;
+    --Band-hover: var(--LED);
+    --Album: #898373;
+    --Album-hover: #1c2a22;
+    --Text: #e50815;
+    --Primary: #eef1ef;
+    --Secondary: #a2a8a7;
+    --Overall-value: #e1e4e3;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: var(--background-gray);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/*Navigator*/
+
+.Direktor
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    user-select: none;
+}
+
+.Direktor a
+{
+    font-family: "Rammstein by Wojciech", sans-serif;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--Band);
+    border-bottom: 4px solid var(--shadow);
+    border-top: 4px solid var(--shadow);
+    border-right: 4px solid var(--shadow);
+    border-left: 4px solid var(--shadow);
+    border-radius: 4px;
+    border-style: double;
+    margin-bottom: 100px;
+    transition: 0.7s;
+}
+
+.Direktor a:hover
+{
+    color: var(--LED);
+    border-bottom: 4px solid var(--LED);
+    border-top: 4px solid var(--LED);
+    border-right: 4px solid var(--LED);
+    border-left: 4px solid var(--LED);
+    border-style: double;
+}
+
+/*Top Section*/
+
+.Bilder 
+{
+    position: relative;
+    width: 350px;
+    height: 311px;
+    background-color: var(--monitor);
+    border-radius: 20px;
+    border-top: 0.1px solid var(--shadow);
+    border-bottom: 7px solid var(--shadow);
+    border-right: 7px solid var(--shadow);
+    border-left: 0.1px solid var(--shadow);
+    margin-bottom: 60px;
+    left: 25%;
+    user-select: none;
+}
+
+.Bilder img
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+    transition: 0.8s;
+}
+
+.Bild-Norm
+{
+    position: absolute;
+    transition: 0.8s;
+}
+
+.Bild-Norm:hover
+{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.Bild-Inv
+{
+    position: absolute;
+}
+
+/*Middle Section*/
+
+.Feld 
+{
+    height: auto;
+    width: 700px; /*= @media max-width()*/
+    background-color: var(--monitor);
+    border-radius: 20px;
+    border-top: 0.1px solid var(--shadow);
+    border-bottom: 7px solid var(--shadow);
+    border-right: 7px solid var(--shadow);
+    border-left: 0.1px solid var(--shadow);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.Titel-Feld
+{
+    width: 700px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.Titel
+{
+    width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.Titel b
+{
+    cursor: default;
+    color: var(--Overall-value);
+    font-size: 1.6rem;
+    font-weight: 800;
+    transition: 0.5s;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-family: "Rammstein by Wojciech", sans-serif;
+}
+
+.Titel:hover b
+{
+color: var(--Secondary);
+}
+
+.Texte
+{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.Texte b
+{
+    cursor: default;
+    font-weight: 600;
+    color: var(--Text);
+    transition: 1s;
+}
+
+.Texte b:hover
+{
+    color: var(--Primary);
+    transition: 0.5s;
+}
+
+.All b
+{
+    color: transparent;
+    user-select: none;
+    pointer-events: none;
+}
+
+/*Bottom Section*/
+
+.Info-Streich 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    user-select: none;
+}
+
+.Info-Streich p
+{
+    font-size: 1.1rem;
+    font-family: "Rammstein by Wojciech", sans-serif;
+}
+
+.Band-Logo img
+{
+    width: 40px;
+    margin-top: 60px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.Band-Link
+{
+    margin-top: 73px;
+}
+
+.Band-Link a
+{
+    color: var(--Band);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.Band-Link a:hover
+{
+    color: var(--Band-hover);
+    transition: 0.7s;
+}
+
+.Album-Link
+{
+    margin-top: 73px;
+}
+
+.Album-Link a
+{
+    color: var(--Album);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.Album-Link a:hover
+{
+    color: var(--Album-hover);
+    transition: 0.7s;
+}
+
+.Lied-Link
+{
+    margin-top: 73px;
+}
+
+.Lied-Link a
+{
+    color: var(--Overall-value);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.Lied-Link a:hover
+{
+    color: var(--Secondary);
+    transition: 0.7s;
+}
+
+.V-Linie
+{
+    margin-top: 69px ;
+}
+
+.Abstand-Strich p
+{
+    color: transparent;
+    user-select: none;
+}
+
+
+
+.Titel b::selection
+{
+    color: var(--Text);
+    background: var(--Primary);
+}
+
+.Texte b::selection
+{
+    color: var(--Secondary);
+    background: var(--Overall-value);
+}
+
+
+
+@media (max-width: 700px) /*= .Feld width:()*/
+{
+    /*Navigator*/
+
+    .Direktor a
+    {
+        font-family: "Rammstein by Wojciech", sans-serif;
+        font-size: 3rem;
+        text-decoration: none;
+        color: var(--Band);
+        border-bottom: 4px solid var(--shadow);
+        border-top: 4px solid var(--shadow);
+        border-radius: 4px;
+        border-style: double;
+    }
+
+    /*Top Section*/
+
+    .Bilder
+    {
+        width: 250px;
+        height: 271px;
+        margin-top: 60px;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    /*Middle Section*/
+
+    .Feld 
+    {
+        width: auto;
+        margin: 10px;
+    }
+
+    .Titel-Feld
+    {
+        width: auto;
+    }
+
+    .Texte b
+    {
+        font-size: 0.9rem;
+    }
+
+    .Titel b
+    {
+        font-size: 1.3rem;
+    }
+
+    /*Bottom Section*/
+
+    .Info-Streich 
+    {
+        display: block;
+    }
+
+    .Band-Logo img
+    {
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+
+    .Band-Link
+    {
+        margin-left: 14px;
+        margin-top: 0px;
+    }
+
+    .Band-Link a
+    {
+        user-select: none;
+        text-decoration: none;
+    }
+
+    .Album-Link
+    {
+        margin-left: 14px;
+        margin-top: 0px;
+    }
+
+    .Album-Link a
+    {
+        user-select: none;
+        text-decoration: none;
+    }
+
+    .Lied-Link
+    {
+        margin-left: 14px;
+        margin-top: 0px;
+        margin-bottom: 6px;
+    }
+
+    .Lied-Link a
+    {
+        user-select: none;
+        text-decoration: none;
+    }
+
+    .V-Linie
+    {
+        margin-top: 14px;
+        margin-bottom: 14px;
+        margin-left: 14px;
+    }
+
+    .Abstand-Strich
+    {
+        margin: 6px;
+    }
+
+    .Abstand-Strich p
+    {
+        color: transparent;
+        font-size: 0.1rem;
+    }
+}
