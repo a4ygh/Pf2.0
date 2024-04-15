@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root
+{
+    --gap: 15px;
+    /*Shade*/
+    --LED: #ffffff;
+    --background-gray: #323232;
+    --forerunner-alloy: #737478;
+    /*covinant (purple)*/
+    --dark-covi: #3f2e3e;
+    --bloody-sangheili: #331c2c;
+    --light-covi: #a78295;
+    --bruise: #432D2F;
+    --covi-wall: #241a3e;
+    --soft-covi-wall: #544265;
+    --covi-flor: #59357a;
+    --soft-covi-flor: #826d87;
+    /*forerunner (blue)*/
+    --wraith-blue: #363045;
+    --deep-soft-blue: #5c5470;
+    --blue-gray: #b9b4c7;
+    --deep-vintage-blue: #113946;
+    --formal-blue: #5c96a9;
+    /*civ. warthog (yellow)*/
+    --civilian-wart: #C88B18;
+    --sun:#F9B508;
+    --home-wall: #efe1d1;
+    --cream: #faf0e6;
+    --yellow-wall: #fff2d8;
+    --gray-wall: #ead7bb;
+    --watered-coffee: #bca37f;
+    /*duke (green)*/
+    --h2-chief: #817F59;
+    --h3-chief: #677156;
+    --hi-chief: #778450;
+    --light-vintage-green: #739072;
+    --vintage-green: #4f6f52;
+    --deep-vintage-green: #3a4d39;
+    /*banished (red)*/
+    --mark-of-atriox: #DF0024;
+    --rdomnai-blade: #FE3558;
+    --silent-shadow: #A23F61;
+    --fall-leaf: #9C1F2D;
+    --blood: #9A0005;
+    /*sample box* (orange)*/
+    --orange-box: #DE571F;
+    --orange: #DD7F0B;
+    /*brute (brown*/
+    /**/
+    /**/
+    /**/
+    /**/
+    /**/
+}
+
+body
+{
+  background-color: #323232;
+}
+
+.loader
+{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden
+{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after
+{
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 15px solid #3a485e;
+  border-top-color: #fff370;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading
+{
+  form{
+    transform: rotate(0turn);
+  }
+  to{
+    transform: rotate(1turn);
+  }
+}

@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/rammstein'); /*Ramm-Alphabet*/
+
+@import url('https://fonts.cdnfonts.com/css/rammstein-remix'); /*Ramm-Nummern*/
+
+@import url('https://fonts.cdnfonts.com/css/forerunner'); /*Forerunner*/
+
+:root
+{
+    --gap: 15px;
+    /*Shade*/
+    --LED: #ffffff;
+    --schwarz: #000000;
+    --background-gray: #323232;
+    --monitor: #28282880;
+    --shadow: #282828;
+    --forerunner-alloy: #737478;
+    --forerunner-alloy-sand: #8f8b88;
+    --forerunner-alloy-ridge: #5b5b5b;
+    --forerunner-alloy-ridge-dark: #2b2d2c;
+    --forerunner-alloy-ridge-light: #f0e7e0;
+    /*covinant (purple)*/
+    --dark-covi: #3f2e3e;
+    --bloody-sangheili: #331c2c;
+    --light-covi: #a78295;
+    --bruise: #432D2F;
+    --covi-wall: #241a3e;
+    --soft-covi-wall: #544265;
+    --covi-flor: #59357a;
+    --soft-covi-flor: #826d87;
+    /*forerunner (blue)*/
+    --forerunner-beam: #66baff;
+    --wraith-blue: #363045;
+    --deep-soft-blue: #5c5470;
+    --blue-gray: #b9b4c7;
+    --deep-vintage-blue: #113946;
+    --formal-blue: #5c96a9;
+    /*civ. warthog (yellow)*/
+    --civilian-wart: #C88B18;
+    --sun:#F9B508;
+    --home-wall: #efe1d1;
+    --cream: #faf0e6;
+    --yellow-wall: #fff2d8;
+    --gray-wall: #ead7bb;
+    --watered-coffee: #bca37f;
+    /*duke (green)*/
+    --h2-chief: #817F59;
+    --h3-chief: #677156;
+    --hi-chief: #778450;
+    --light-vintage-green: #739072;
+    --vintage-green: #4f6f52;
+    --deep-vintage-green: #3a4d39;
+    /*banished (red)*/
+    --mark-of-atriox: #DF0024;
+    --rdomnai-blade: #FE3558;
+    --silent-shadow: #A23F61;
+    --fall-leaf: #9C1F2D;
+    --blood: #9A0005;
+    /*sample box* (orange)*/
+    --forerunner-conversion: #e09b4d;
+    --orange-box: #DE571F;
+    --orange: #DD7F0B;
+    /*brute (brown*/
+    /**/
+    /**/
+    /**/
+    /**/
+    /**/
+    /*!-THEME-!*/
+    --Band: #000000;
+    --Band-hover: var(--LED);
+    --Album: #898373;
+    --Album-hover: #1c2a22;
+    --Text: #fcfffd;
+
+    --Lied1: #f32508;
+    --Lied1-hover: #272115;
+    --Lied2: #9c9779;
+    --Lied2-hover: #293f41;
+    --Lied3: #9e9321;
+    --Lied3-hover: #4c2b12;
+    --Lied4: #739357;
+    --Lied4-hover: #a49a77;
+    --Lied5: #e1e4e3;
+    --Lied5-hover: #a2a8a7;
+    --Lied6: #a2691a;
+    --Lied6-hover: #201b0b;
+    --Lied7:#898373;
+    --Lied7-hover: #1c2a22;
+    --Lied8: #898373;
+    --Lied8-hover: #1c2a22;
+    --Lied9: #898373;
+    --Lied9-hover: #1c2a22;
+    --Lied10: #898373;
+    --Lied10-hover: #1c2a22;
+    --Lied11: #898373;
+    --Lied11-hover: #1c2a22;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: var(--background-gray);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/*Oberer-Abschnitt*/
+
+.Direktor
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    user-select: none;
+}
+
+.Direktor a
+{
+    font-family: "Rammstein by Wojciech", sans-serif;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--Band);
+    border-bottom: 4px solid var(--shadow);
+    border-top: 4px solid var(--shadow);
+    border-right: 4px solid var(--shadow);
+    border-left: 4px solid var(--shadow);
+    border-radius: 4px;
+    border-style: double;
+    transition: 0.7s;
+}
+
+.Direktor a:hover
+{
+    color: var(--LED);
+    border-bottom: 4px solid var(--LED);
+    border-top: 4px solid var(--LED);
+    border-right: 4px solid var(--LED);
+    border-left: 4px solid var(--LED);
+    border-style: double;
+}
+
+/*Mittlerer-Abschnitt*/
+
+#Texte
+{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 130px;
+    cursor: default;
+}
+
+.Text-All    
+{
+    color: transparent;
+    user-select: none;
+}
+
+
+
+.Mittlerer-Abschnitt
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.Feld
+{
+
+}
+
+#Bilder
+{
+
+}
+
+#Bilder img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.8s;
+}
+
+.Lied1
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Bilder1
+{
+    position: relative;
+    width: 400px;
+    height: 434.5px;
+    background-color: var(--monitor);
+    border-radius: 20px;
+    border-top: 0.1px solid var(--shadow);
+    border-bottom: 7px solid var(--shadow);
+    border-right: 7px solid var(--shadow);
+    border-left: 0.1px solid var(--shadow);
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.Bild1-Norm
+{
+    position: absolute;
+    transition: 0.8s;
+}
+
+.Bild1-Norm:hover
+{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.Bild1-Inv
+{
+    position: absolute;
+}
+
+.Text1
+{
+    font-family: "Rammstein by Wojciech", sans-serif;
+    font-size: 1.2rem;
+    color: var(--Lied1);
+    transition: 0.5s;
+}
+
+.Text1:hover
+{
+    font-size: 1.3rem;
+    color: var(--Lied1-hover);
+}
+
+
+
+
+.Lied2
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.Bilder2
+{
+    position: relative;
+    width: 400px;
+    height: 398px;
+    background-color: var(--monitor);
+    border-radius: 20px;
+    border-top: 0.1px solid var(--shadow);
+    border-bottom: 7px solid var(--shadow);
+    border-right: 7px solid var(--shadow);
+    border-left: 0.1px solid var(--shadow);
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+
+.Bild2-Norm
+{
+    position: absolute;
+    transition: 0.8s;
+}
+
+.Bild2-Norm:hover
+{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.Bild2-Inv
+{
+    position: absolute;
+}
+
+.Text2
+{
+    font-family: "Rammstein by Wojciech", sans-serif;
+    font-size: 1.2rem;
+    color: var(--Lied2);
+    transition: 0.5s;
+}
+
+.Text2:hover
+{
+    font-size: 1.3rem;
+    color: var(--Lied2-hover);
+}
+
+.Text2-2
+{
+    font-family: 'Rammstein Remix', sans-serif;
+}
+
+
+
+.Lied3
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.Bilder3
+{
+    position: relative;
+    width: 400px;
+    height: 350px;
+    background-color: var(--monitor);
+    border-radius: 20px;
+    border-top: 0.1px solid var(--shadow);
+    border-bottom: 7px solid var(--shadow);
+    border-right: 7px solid var(--shadow);
+    border-left: 0.1px solid var(--shadow);
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+
+.Bild3-Norm
+{
+    position: absolute;
+    transition: 0.8s;
+}
+
+.Bild3-Norm:hover
+{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.Bild3-Inv
+{
+    position: absolute;
+}
+
+.Text3
+{
+    font-family: "Rammstein by Wojciech", sans-serif;
+    font-size: 1.2rem;
+    color: var(--Lied3);
+    transition: 0.5s;
+}
+
+.Text3:hover
+{
+    font-size: 1.3rem;
+    color: var(--Lied3-hover);
+}
+
+
+
+.Lied4
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Bilder4
+{
+    position: relative;
+    width: 400px;
+    height: 350px;
+    background-color: var(--monitor);
+    border-radius: 20px;
+    border-top: 0.1px solid var(--shadow);
+    border-bottom: 7px solid var(--shadow);
+    border-right: 7px solid var(--shadow);
+    border-left: 0.1px solid var(--shadow);
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.Bild4-Norm
+{
+    position: absolute;
+    transition: 0.8s;
+}
+
+.Bild4-Norm:hover
+{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.Bild4-Inv
+{
+    position: absolute;
+}
+
+.Text4
+{
+    font-family: "Rammstein by Wojciech", sans-serif;
+    font-size: 1.2rem;
+    color: var(--Lied4);
+    transition: 0.5s;
+}
+
+.Text4:hover
+{
+    font-size: 1.3rem;
+    color: var(--Lied4-hover);
+}
+
+
+
+.Lied5
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Bilder5
+{
+    position: relative;
+    width: 400px;
+    height: 355px;
+    background-color: var(--monitor);
+    border-radius: 20px;
+    border-top: 0.1px solid var(--shadow);
+    border-bottom: 7px solid var(--shadow);
+    border-right: 7px solid var(--shadow);
+    border-left: 0.1px solid var(--shadow);
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.Bild5-Norm
+{
+    position: absolute;
+    transition: 0.8s;
+}
+
+.Bild5-Norm:hover
+{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.Bild5-Inv
+{
+    position: absolute;
+}
+
+.Text5
+{
+    font-family: "Rammstein by Wojciech", sans-serif;
+    font-size: 1.2rem;
+    color: var(--Lied5);
+    transition: 0.5s;
+}
+
+.Text5:hover
+{
+    font-size: 1.3rem;
+    color: var(--Lied5-hover);
+}
+
+
+
+.Lied6
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Bilder6
+{
+    position: relative;
+    width: 400px;
+    height: 350.5px;
+    background-color: var(--monitor);
+    border-radius: 20px;
+    border-top: 0.1px solid var(--shadow);
+    border-bottom: 7px solid var(--shadow);
+    border-right: 7px solid var(--shadow);
+    border-left: 0.1px solid var(--shadow);
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.Bild6-Norm
+{
+    position: absolute;
+    transition: 0.8s;
+}
+
+.Bild6-Norm:hover
+{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.Bild6-Inv
+{
+    position: absolute;
+}
+
+.Text6
+{
+    font-family: "Rammstein by Wojciech", sans-serif;
+    font-size: 1.2rem;
+    color: var(--Lied6);
+    transition: 0.5s;
+}
+
+.Text6:hover
+{
+    font-size: 1.3rem;
+    color: var(--Lied6-hover);
+}
+
+
+
+.Lied7
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Bilder7
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: var(--monitor);
+    border-radius: 20px;
+    border-top: 0.1px solid var(--shadow);
+    border-bottom: 7px solid var(--shadow);
+    border-right: 7px solid var(--shadow);
+    border-left: 0.1px solid var(--shadow);
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.Bild7-Norm
+{
+    position: absolute;
+    transition: 0.8s;
+}
+
+.Bild7-Norm:hover
+{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.Bild7-Inv
+{
+    position: absolute;
+}
+
+.Text7
+{
+    font-family: "Rammstein by Wojciech", sans-serif;
+    font-size: 1.2rem;
+    color: var(--Lied7);
+    transition: 0.5s;
+}
+
+.Text7:hover
+{
+    font-size: 1.3rem;
+    color: var(--Lied7-hover);
+}
+
+
+
+.Lied8
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Bilder8
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: var(--monitor);
+    border-radius: 20px;
+    border-top: 0.1px solid var(--shadow);
+    border-bottom: 7px solid var(--shadow);
+    border-right: 7px solid var(--shadow);
+    border-left: 0.1px solid var(--shadow);
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.Bild8-Norm
+{
+    position: absolute;
+    transition: 0.8s;
+}
+
+.Bild8-Norm:hover
+{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.Bild8-Inv
+{
+    position: absolute;
+}
+
+.Text8
+{
+    font-family: "Rammstein by Wojciech", sans-serif;
+    font-size: 1.2rem;
+    color: var(--Lied8);
+    transition: 0.5s;
+}
+
+.Text8:hover
+{
+    font-size: 1.3rem;
+    color: var(--Lied8-hover);
+}
+
+/*Noch nicht Fertig*/
+
+.Lied9
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Bilder9
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: var(--monitor);
+    border-radius: 20px;
+    border-top: 0.1px solid var(--shadow);
+    border-bottom: 7px solid var(--shadow);
+    border-right: 7px solid var(--shadow);
+    border-left: 0.1px solid var(--shadow);
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.Bild9-Norm
+{
+    position: absolute;
+    transition: 0.8s;
+}
+
+.Bild9-Norm:hover
+{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.Bild9-Inv
+{
+    position: absolute;
+}
+
+.Text9
+{
+    font-family: "Rammstein by Wojciech", sans-serif;
+    font-size: 1.2rem;
+    color: var(--Lied9);
+    transition: 0.5s;
+}
+
+.Text9:hover
+{
+    font-size: 1.3rem;
+    color: var(--Lied9-hover);
+}
+
+
+
+.Lied10
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Bilder10
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: var(--monitor);
+    border-radius: 20px;
+    border-top: 0.1px solid var(--shadow);
+    border-bottom: 7px solid var(--shadow);
+    border-right: 7px solid var(--shadow);
+    border-left: 0.1px solid var(--shadow);
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.Bild10-Norm
+{
+    position: absolute;
+    transition: 0.8s;
+}
+
+.Bild10-Norm:hover
+{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.Bild10-Inv
+{
+    position: absolute;
+}
+
+.Text10
+{
+    font-family: "Rammstein by Wojciech", sans-serif;
+    font-size: 1.2rem;
+    color: var(--Lied10);
+    transition: 0.5s;
+}
+
+.Text10:hover
+{
+    font-size: 1.3rem;
+    color: var(--Lied10-hover);
+}
+
+
+
+.Lied11
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Bilder11
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: var(--monitor);
+    border-radius: 20px;
+    border-top: 0.1px solid var(--shadow);
+    border-bottom: 7px solid var(--shadow);
+    border-right: 7px solid var(--shadow);
+    border-left: 0.1px solid var(--shadow);
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.Bild11-Norm
+{
+    position: absolute;
+    transition: 0.8s;
+}
+
+.Bild11-Norm:hover
+{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.Bild11-Inv
+{
+    position: absolute;
+}
+
+.Text11
+{
+    font-family: "Rammstein by Wojciech", sans-serif;
+    font-size: 1.2rem;
+    color: var(--Lied11);
+    transition: 0.5s;
+}
+
+.Text11:hover
+{
+    font-size: 1.3rem;
+    color: var(--Lied11-hover);
+}
+
+
+
+
+
+.Text1 b::selection
+{
+    color: var(--Lied1-hover);
+    background-color: var(--Lied1);
+}
+
+.Text2 b::selection
+{
+    color: var(--Lied2-hover);
+    background-color: var(--Lied2);
+}
+
+.Text3 b::selection
+{
+    color: var(--Lied3-hover);
+    background-color: var(--Lied3);
+}
+
+.Text4 b::selection
+{
+    color: var(--Lied4-hover);
+    background-color: var(--Lied4);
+}
+
+.Text5 b::selection
+{
+    color: var(--Lied5-hover);
+    background-color: var(--Lied5);
+}
+
+.Text6 b::selection
+{
+    color: var(--Lied6-hover);
+    background-color: var(--Lied6);
+}
+
+.Text7 b::selection
+{
+    color: var(--Lied7-hover);
+    background-color: var(--Lied7);
+}
+
+.Text8 b::selection
+{
+    color: var(--Lied8-hover);
+    background-color: var(--Lied8);
+}
+
+.Text9 b::selection
+{
+    color: var(--Lied9-hover);
+    background-color: var(--Lied9);
+}
+
+.Text10 b::selection
+{
+    color: var(--Lied10-hover);
+    background-color: var(--Lied10);
+}
+
+.Text11 b::selection
+{
+    color: var(--Lied11-hover);
+    background-color: var(--Lied11);
+}
+
+
+
+
+
+.Portfolio-Knopf
+{
+    background-color: rgb(102, 186, 255, 0.6);
+    width: fit-content;
+    border: 3px solid var(--forerunner-beam);
+    transition: 0.6s;
+    border-radius: 25px;
+    bottom: 100px;
+    font-weight: 500;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.Portfolio-Knopf a
+{
+    font-family: 'Poppins', sans-serif;
+    color: var(--forerunner-beam);
+    text-decoration: none;
+    padding: 2px 12px 2px 12px;
+    transition: 0.6s;
+}
+
+.Portfolio-Knopf:hover
+{
+    background-color: rgb(224, 155, 77, 0.6);
+    border: 3px solid var(--forerunner-conversion);
+    transform: translateY(-10px);
+}
+
+.Portfolio-Knopf a:hover
+{
+    color: var(--forerunner-conversion);
+}
