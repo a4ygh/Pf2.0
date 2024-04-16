@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root
+{
+    /*Shade*/
+    --LED: #ffffff;
+    --schwarz: #000000;
+    --background-gray: #323232;
+    --monitor: #28282880;
+    --shadow: #282828;
+    --forerunner-alloy: #737478;
+    --forerunner-alloy-sand: #8f8b88;
+    --forerunner-alloy-ridge: #5b5b5b;
+    --forerunner-alloy-ridge-dark: #2b2d2c;
+    --forerunner-alloy-ridge-light: #f0e7e0;
+    /*covinant (purple)*/
+    --dark-covi: #3f2e3e;
+    --bloody-sangheili: #331c2c;
+    --light-covi: #a78295;
+    --bruise: #432D2F;
+    --covi-wall: #241a3e;
+    --soft-covi-wall: #544265;
+    --covi-flor: #59357a;
+    --soft-covi-flor: #826d87;
+    /*forerunner (blue)*/
+    --forerunner-beam: #66baff;
+    --wraith-blue: #363045;
+    --deep-soft-blue: #5c5470;
+    --blue-gray: #b9b4c7;
+    --deep-vintage-blue: #113946;
+    --formal-blue: #5c96a9;
+    /*civ. warthog (yellow)*/
+    --civilian-wart: #C88B18;
+    --sun:#F9B508;
+    --home-wall: #efe1d1;
+    --cream: #faf0e6;
+    --yellow-wall: #fff2d8;
+    --gray-wall: #ead7bb;
+    --watered-coffee: #bca37f;
+    /*duke (green)*/
+    --h2-chief: #817F59;
+    --h3-chief: #677156;
+    --hi-chief: #778450;
+    --light-vintage-green: #739072;
+    --vintage-green: #4f6f52;
+    --deep-vintage-green: #3a4d39;
+    /*banished (red)*/
+    --mark-of-atriox: #DF0024;
+    --rdomnai-blade: #FE3558;
+    --silent-shadow: #A23F61;
+    --fall-leaf: #9C1F2D;
+    --blood: #9A0005;
+    /*sample box* (orange)*/
+    --forerunner-conversion: #e09b4d;
+    --orange-box: #DE571F;
+    --orange: #DD7F0B;
+    /*brute (brown*/
+    /**/
+    /**/
+    /**/
+    /**/
+
+    /*
+    !-THEME-! 
+    - 
+    Forerunner with hidden black and white (Dark mode) Toggle
+    */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #2B2B2B;
+    background: linear-gradient(to right, #80B4C7,#86C28C);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.container p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span{
+    font-size: 12px;
+}
+
+.container a{
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+
+}
+
+.container button{
+    background-color: #6C7A93;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.active .sign-in{
+    transform: translateX(100%);
+}
+
+.sign-up{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.active .sign-up{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.8s;
+}
+
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+    
+.social-icons{
+    margin: 20px 0;
+}
+
+.social-icons a{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.toggle-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+
+.container.active .toggle-container{
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.toggle{
+    background-color: #8a2be2;
+    height: 100%;
+    background: linear-gradient(to right, #6C7A93, #AFC7F0);
+    color: #FFDC1D;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container.active .toggle{
+    transform: translateX(50%);
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left{
+    transform: translateX(-200%);
+}
+
+.container.active .toggle-left{
+    transform: translateX(0);
+}
+
+.toggle-right{
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.active .toggle-right{
+    transform: translateX(200%);
+}
+
+
+
+.Portfolio-Knopf
+{
+    background-color: rgb(102, 186, 255, 0.6);
+    width: fit-content;
+    border: 3px solid var(--forerunner-beam);
+    transition: 0.6s;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 100px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.Portfolio-Knopf a
+{
+    font-family: 'Poppins', sans-serif;
+    color: var(--forerunner-beam);
+    text-decoration: none;
+    padding: 2px 12px 2px 12px;
+    transition: 0.6s;
+}
+
+.Portfolio-Knopf:hover
+{
+    background-color: rgb(224, 155, 77, 0.6);
+    border: 3px solid var(--forerunner-conversion);
+    transform: translateY(-10px);
+}
+
+.Portfolio-Knopf a:hover
+{
+    color: var(--forerunner-conversion);
+}
