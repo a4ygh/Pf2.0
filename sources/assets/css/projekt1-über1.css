@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root
+{
+    --gap: 15px;
+    /*Shade*/
+    --LED: #ffffff;
+    --background-gray: #323232;
+    --forerunner-alloy: #737478;
+    /*covinant (purple)*/
+    --dark-covi: #3f2e3e;
+    --bloody-sangheili: #331c2c;
+    --light-covi: #a78295;
+    --bruise: #432D2F;
+    --covi-wall: #241a3e;
+    --soft-covi-wall: #544265;
+    --covi-flor: #59357a;
+    --soft-covi-flor: #826d87;
+    --start-back: #5a535f;
+    /*forerunner (blue)*/
+    --wraith-blue: #363045;
+    --deep-soft-blue: #5c5470;
+    --blue-gray: #b9b4c7;
+    --deep-vintage-blue: #113946;
+    --formal-blue: #5c96a9;
+    /*civ. warthog (yellow)*/
+    --civilian-wart: #C88B18;
+    --sun:#F9B508;
+    --home-wall: #efe1d1;
+    --cream: #faf0e6;
+    --yellow-wall: #fff2d8;
+    --gray-wall: #ead7bb;
+    --watered-coffee: #bca37f;
+    /*duke (green)*/
+    --h2-chief: #817F59;
+    --h3-chief: #677156;
+    --hi-chief: #778450;
+    --light-vintage-green: #739072;
+    --vintage-green: #4f6f52;
+    --deep-vintage-green: #3a4d39;
+    /*banished (red)*/
+    --mark-of-atriox: #DF0024;
+    --rdomnai-blade: #FE3558;
+    --silent-shadow: #A23F61;
+    --fall-leaf: #9C1F2D;
+    --blood: #9A0005;
+    /*sample box* (orange)*/
+    --orange-box: #DE571F;
+    --orange: #DD7F0B;
+    /*brute (brown*/
+    /**/
+    /**/
+    /**/
+    /**/
+    /**/
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background:
+    radial-gradient(ellipse at 100% 10%, #a4a437 0%, transparent 80%),
+    radial-gradient(ellipse at 10% 100%, #a96d18 0%, transparent 80%);
+    background-color: var(--forerunner-alloy);
+    background-blend-mode:screen;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.left-handle
+{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    background: rgba(54, 48, 69, 0.1); /*Kartenfarbe,--wraith-blue*/
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(150, 150, 150, 1); /*Kartenrandfarbenränder, top, left, right, bottom*/
+    border-left: 1px solid rgba(150, 150, 150, 1);
+    border-right: 1px solid rgba(150, 150, 150, 1);
+    border-bottom: 1px solid rgba(150, 150, 150, 1);
+    backdrop-filter: blur(5px);
+}
+
+.button i
+{
+    border: 1px solid rgba(150, 150, 150, 1);
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seitenzahl
+{
+    position: absolute;
+    top: -44px;
+    right: 0px;
+    font-size: 6em;
+    color: rgba(100, 100, 100, 0.2);
+    pointer-events: none;
+    z-index: -1;
+    user-select: none;
+}
+
+.l-text
+{
+    color: var(--bloody-sangheili);
+    position: absolute;
+    top: 120px;
+    right: 100px;
+    width: 460px;
+    font-size: 1.4em;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: left;
+}
+
+#lebenslauf-button a
+{
+    color: #ffe37a;
+    position: absolute;
+    left: 10px;
+    top: 137px;
+    border-radius: 11px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+#lebenslauf-button a:hover
+{
+    color: var(--LED);
+    background-color: #ffe37a;
+    text-shadow: 2px 2px 1.5px rgba(0, 0, 0, 0.3);
+}
+
+.z-text
+{
+    color: var(--bloody-sangheili);
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    width: 460px;
+    font-size: 1.4em;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: left;
+}
+
+#zeugnisse-button a
+{
+    color: #ffe37a;
+    position: absolute;
+    left: 10px;
+    top: 217px;
+    border-radius: 11px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+#zeugnisse-button a:hover
+{
+    color: var(--LED);
+    background-color: #ffe37a;
+    text-shadow: 2px 2px 1.5px rgba(0, 0, 0, 0.3);
+}
+
+.fa-caret-right
+{
+    color: #ffe37a;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.5s;
+}
+
+.fa-caret-right:hover
+{
+    color: var(--LED);
+    background-color: #ffe37a;
+    text-shadow: 2px 2px 1.5px rgba(0, 0, 0, 0.3);
+}
+
+.fa-caret-left
+{
+    color: #ffe37a;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transition: 0.5s;
+}
+
+.fa-caret-left:hover
+{
+    color: var(--LED);
+    background-color: #ffe37a;
+    text-shadow: 2px 2px 1.5px rgba(0, 0, 0, 0.3);
+}

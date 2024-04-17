@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root
+{
+    --gap: 15px;
+    /*Shade*/
+    --LED: #ffffff;
+    --background-gray: #323232;
+    --forerunner-alloy: #737478;
+    /*covinant (purple)*/
+    --dark-covi: #3f2e3e;
+    --bloody-sangheili: #331c2c;
+    --light-covi: #a78295;
+    --bruise: #432D2F;
+    --covi-wall: #241a3e;
+    --soft-covi-wall: #544265;
+    --covi-flor: #59357a;
+    --soft-covi-flor: #826d87;
+    --start-back: #5a535f;
+    /*forerunner (blue)*/
+    --wraith-blue: #363045;
+    --deep-soft-blue: #5c5470;
+    --blue-gray: #b9b4c7;
+    --deep-vintage-blue: #113946;
+    --formal-blue: #5c96a9;
+    /*civ. warthog (yellow)*/
+    --civilian-wart: #C88B18;
+    --sun:#F9B508;
+    --home-wall: #efe1d1;
+    --cream: #faf0e6;
+    --yellow-wall: #fff2d8;
+    --gray-wall: #ead7bb;
+    --watered-coffee: #bca37f;
+    /*duke (green)*/
+    --h2-chief: #817F59;
+    --h3-chief: #677156;
+    --hi-chief: #778450;
+    --light-vintage-green: #739072;
+    --vintage-green: #4f6f52;
+    --deep-vintage-green: #3a4d39;
+    /*banished (red)*/
+    --mark-of-atriox: #DF0024;
+    --rdomnai-blade: #FE3558;
+    --silent-shadow: #A23F61;
+    --fall-leaf: #9C1F2D;
+    --blood: #9A0005;
+    /*sample box* (orange)*/
+    --orange-box: #DE571F;
+    --orange: #DD7F0B;
+    /*brute (brown*/
+    /**/
+    /**/
+    /**/
+    /**/
+    /**/
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background:
+    radial-gradient(ellipse at 100% 10%, #b72039 0%, transparent 80%),
+    radial-gradient(ellipse at 10% 100%, #A23F61 0%, transparent 80%);
+    background-color: var(--forerunner-alloy);
+    background-blend-mode:screen;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.right-handle
+{
+    position: relative;
+    width: 400px;
+    height: 230px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    background: rgba(54, 48, 69, 0.1); /*Kartenfarbe,--wraith-blue*/
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(150, 150, 150, 1); /*Kartenrandfarbenränder, top, left, right, bottom*/
+    border-left: 1px solid rgba(150, 150, 150, 1);
+    border-right: 1px solid rgba(150, 150, 150, 1);
+    border-bottom: 1px solid rgba(150, 150, 150, 1);
+    backdrop-filter: blur(5px);
+}
+
+.text
+{
+    color: var(--bloody-sangheili);
+    width: 460px;
+    font-size: 1.4em;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    text-align: center;
+}
+
+.director a
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: transparent 0%;
+    border-radius: 10px;
+    font-weight: 500;
+    border-top: 1px solid rgba(150, 150, 150, 1);
+    border-left: 1px solid rgba(150, 150, 150, 1);
+    border-right: 1px solid rgba(150, 150, 150, 1);
+    border-bottom: 1px solid rgba(150, 150, 150, 1);
+    transform: translateY(10px);
+    transition: 0.6s;
+    user-select: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+#index-dire
+{
+    display: flex;
+    justify-content: center;
+}
+
+#index-dire a
+{
+    color: var(--start-back);
+}
+
+#index-dire a:hover
+{
+    background-color: var(--start-back);
+    color: var(--LED);
+    transform: translateY(0px);
+    transition: 0.6s;
+    text-shadow: 2px 2px 1.5px rgba(0, 0, 0, 0.3);
+}
